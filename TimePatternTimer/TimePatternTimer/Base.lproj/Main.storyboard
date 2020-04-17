@@ -26,7 +26,7 @@
         <!--Item 1-->
         <scene sceneID="N6y-Nr-0X4">
             <objects>
-                <viewController id="xN0-34-yqZ" sceneMemberID="viewController">
+                <viewController id="xN0-34-yqZ" customClass="ViewController" customModule="TimePatternTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VZC-5d-PBX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,6 +35,9 @@
                                 <rect key="frame" x="0.0" y="100" width="375" height="216"/>
                                 <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                 <locale key="locale" localeIdentifier="ko_KR"/>
+                                <connections>
+                                    <action selector="changeDatePicker:" destination="xN0-34-yqZ" eventType="valueChanged" id="Z9Q-Yf-BOm"/>
+                                </connections>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="afterbtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlH-ea-vIs">
                                 <rect key="frame" x="62" y="459" width="250" height="55"/>
@@ -55,6 +58,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancelTimer:" destination="xN0-34-yqZ" eventType="touchUpInside" id="bvH-Z1-dg8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="startbtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ac0-CF-h3V">
                                 <rect key="frame" x="222" y="367" width="90" height="60"/>
@@ -69,17 +75,39 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startTimer:" destination="xN0-34-yqZ" eventType="touchUpInside" id="sOH-ZR-bC5"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="lblpickertime" text="선택 시간 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4r7-II-cxS">
+                                <rect key="frame" x="75" y="45" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="restTimelbl" text="남은 시간 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSO-H0-HHi">
+                                <rect key="frame" x="75" y="74" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="pw7-10-MKG" firstAttribute="top" secondItem="wCM-5Y-W3l" secondAttribute="top" constant="100" id="7dT-EE-J4x"/>
                             <constraint firstItem="wCM-5Y-W3l" firstAttribute="trailing" secondItem="pw7-10-MKG" secondAttribute="trailing" id="BN0-Mg-MG5"/>
                             <constraint firstItem="pw7-10-MKG" firstAttribute="leading" secondItem="wCM-5Y-W3l" secondAttribute="leading" id="ccT-bk-Ulw"/>
+                            <constraint firstItem="4r7-II-cxS" firstAttribute="top" secondItem="wCM-5Y-W3l" secondAttribute="top" constant="45" id="iRR-0P-6vX"/>
+                            <constraint firstItem="4r7-II-cxS" firstAttribute="leading" secondItem="wCM-5Y-W3l" secondAttribute="leading" constant="75" id="vO7-91-vID"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wCM-5Y-W3l"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="R9a-sG-3ov"/>
+                    <connections>
+                        <outlet property="IblPickerTime" destination="4r7-II-cxS" id="NcY-Gb-oL3"/>
+                        <outlet property="IblRestTime" destination="bSO-H0-HHi" id="U0e-Gp-14O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBj-aQ-YFo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
