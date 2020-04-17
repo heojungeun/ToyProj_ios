@@ -5,4 +5,4 @@
 
 Project 01 - BookMemo
 
-<img src="" width="250">
+<img src="https://github.com/heojungeun/ToyProj_ios/blob/master/BookMemo/pj01-screenshot.gif" width="250">
