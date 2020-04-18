@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet var IblPickerTime: UILabel!
     @IBOutlet var IblRestTime: UILabel!
     
+    private let step: Double = 1.0
+    private var timer: Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,11 +32,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startTimer(_ sender: Any) {
-        
+        // start 버튼 눌렀을 때 시간 적용해서 타이머 시작하기
     }
     
     @IBAction func cancelTimer(_ sender: Any) {
-        
+        // 취소 버튼 눌렀을 때 선택시간, 남은시간 초기화하기
     }
+    
 }
 

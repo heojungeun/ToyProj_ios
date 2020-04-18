@@ -14,6 +14,7 @@
 		BC3C474824498C0E0006B130 /* TimePatternTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC3C474624498C0E0006B130 /* TimePatternTimer.xcdatamodeld */; };
 		BC3C474A24498C0F0006B130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3C474924498C0F0006B130 /* Assets.xcassets */; };
 		BC3C474D24498C0F0006B130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3C474B24498C0F0006B130 /* LaunchScreen.storyboard */; };
+		BC9A41E8244B16CF007AF8BE /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A41E7244B16CF007AF8BE /* Stopwatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BC3C474924498C0F0006B130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC3C474C24498C0F0006B130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC3C474E24498C0F0006B130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC9A41E7244B16CF007AF8BE /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				BC3C474B24498C0F0006B130 /* LaunchScreen.storyboard */,
 				BC3C474E24498C0F0006B130 /* Info.plist */,
 				BC3C474624498C0E0006B130 /* TimePatternTimer.xcdatamodeld */,
+				BC9A41E7244B16CF007AF8BE /* Stopwatch.swift */,
 			);
 			path = TimePatternTimer;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				BC3C474224498C0D0006B130 /* ViewController.swift in Sources */,
 				BC3C473E24498C0D0006B130 /* AppDelegate.swift in Sources */,
+				BC9A41E8244B16CF007AF8BE /* Stopwatch.swift in Sources */,
 				BC3C474024498C0D0006B130 /* SceneDelegate.swift in Sources */,
 				BC3C474824498C0E0006B130 /* TimePatternTimer.xcdatamodeld in Sources */,
 			);
