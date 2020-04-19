@@ -21,10 +21,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func firstbtn(_ sender: UIButton) {
+        firstlbl.text = "Hello, \n" + chgtxt.text!
     }
     
     @IBAction func secbtn(_ sender: UIButton) {
-        
+        seclbl.text = "Hello, \n" + chgtxt.text!
     }
     
     
