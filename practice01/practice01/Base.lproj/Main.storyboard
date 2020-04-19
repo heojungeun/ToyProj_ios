@@ -46,7 +46,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCn-xn-3Wt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-695.20000000000005" y="113.79310344827587"/>
+            <point key="canvasLocation" x="-122" y="-218"/>
+        </scene>
+        <!--Item3-->
+        <scene sceneID="kpy-rf-kkg">
+            <objects>
+                <viewController id="AOu-OL-6rF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="80y-J1-2kv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="sDg-MC-21M">
+                                <rect key="frame" x="0.0" y="71" width="375" height="216"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="current time : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xt-Xa-2F9">
+                                <rect key="frame" x="16" y="309" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pick time : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnQ-7M-DS2">
+                                <rect key="frame" x="40" y="338" width="83" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoM-6r-q8M">
+                                <rect key="frame" x="167" y="391" width="40" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="start"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sDg-MC-21M" firstAttribute="top" secondItem="8P1-M1-xu3" secondAttribute="top" constant="71" id="JYT-NT-EMD"/>
+                            <constraint firstItem="sDg-MC-21M" firstAttribute="trailing" secondItem="8P1-M1-xu3" secondAttribute="trailing" id="Mhy-Os-HiV"/>
+                            <constraint firstItem="sDg-MC-21M" firstAttribute="leading" secondItem="8P1-M1-xu3" secondAttribute="leading" id="cDD-fD-8Lq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8P1-M1-xu3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item3" id="UiV-PI-o2N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5K5-Rt-yIa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-850" y="267"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="QZb-R2-N36">
@@ -114,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Vm-37-8iZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-695" y="-551"/>
+            <point key="canvasLocation" x="-873" y="-604"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pV6-Gm-5Wc">
@@ -128,6 +174,7 @@
                     <connections>
                         <segue destination="055-7n-cKQ" kind="relationship" relationship="viewControllers" id="hlz-d9-xz5"/>
                         <segue destination="5kO-zO-WpL" kind="relationship" relationship="viewControllers" id="ykH-VN-MhT"/>
+                        <segue destination="AOu-OL-6rF" kind="relationship" relationship="viewControllers" id="ja3-BI-I1q"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Zt-4t-2Kg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
