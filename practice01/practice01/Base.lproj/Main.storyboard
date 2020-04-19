@@ -15,25 +15,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="css-8W-tUp">
-                                <rect key="frame" x="74" y="121" width="226" height="299"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bulblight" translatesAutoresizingMaskIntoConstraints="NO" id="css-8W-tUp">
+                                <rect key="frame" x="16" y="20" width="185" height="229"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xbd-Cm-T2o">
+                                <rect key="frame" x="249" y="564" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchImgonoff:" destination="5kO-zO-WpL" eventType="valueChanged" id="sX4-NU-EHm"/>
+                                </connections>
+                            </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTT-gP-zqf">
-                                <rect key="frame" x="82" y="489" width="30" height="30"/>
+                                <rect key="frame" x="76" y="564" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="확대"/>
                                 <connections>
                                     <action selector="scalebtn:" destination="5kO-zO-WpL" eventType="touchUpInside" id="pSo-xO-aRm"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xbd-Cm-T2o">
-                                <rect key="frame" x="253" y="489" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchImgonoff:" destination="5kO-zO-WpL" eventType="valueChanged" id="sX4-NU-EHm"/>
-                                </connections>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="9Ir-s6-zzp"/>
@@ -135,4 +135,7 @@
             <point key="canvasLocation" x="-1647" y="-218"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bulblight" width="281" height="347"/>
+    </resources>
 </document>
