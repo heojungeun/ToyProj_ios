@@ -31,16 +31,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pw7-10-MKG">
-                                <rect key="frame" x="0.0" y="100" width="375" height="216"/>
-                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
-                                <locale key="locale" localeIdentifier="ko_KR"/>
-                                <connections>
-                                    <action selector="changeDatePicker:" destination="xN0-34-yqZ" eventType="valueChanged" id="Z9Q-Yf-BOm"/>
-                                </connections>
-                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="afterbtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlH-ea-vIs">
-                                <rect key="frame" x="62" y="459" width="250" height="55"/>
+                                <rect key="frame" x="62" y="517" width="250" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="After timer">
@@ -52,7 +44,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="cancelbtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzw-rk-FDr">
-                                <rect key="frame" x="62" y="368" width="90" height="60"/>
+                                <rect key="frame" x="62" y="426" width="90" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Cancel">
@@ -63,7 +55,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="startbtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ac0-CF-h3V">
-                                <rect key="frame" x="222" y="367" width="90" height="60"/>
+                                <rect key="frame" x="222" y="425" width="90" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Start">
@@ -79,26 +71,37 @@
                                     <action selector="startTimer:" destination="xN0-34-yqZ" eventType="touchUpInside" id="sOH-ZR-bC5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="lblpickertime" text="선택 시간 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4r7-II-cxS">
-                                <rect key="frame" x="75" y="45" width="77" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="lblpickertime" text="선택 시간 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4r7-II-cxS">
+                                <rect key="frame" x="75" y="45" width="237" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="restTimelbl" text="남은 시간 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSO-H0-HHi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="restTimelbl" text="남은 시간 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSO-H0-HHi">
                                 <rect key="frame" x="75" y="74" width="77" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pw7-10-MKG">
+                                <rect key="frame" x="0.0" y="131" width="375" height="216"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                <locale key="locale" localeIdentifier="ko_KR"/>
+                                <connections>
+                                    <action selector="changeDatePicker:" destination="xN0-34-yqZ" eventType="valueChanged" id="Z9Q-Yf-BOm"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="pw7-10-MKG" firstAttribute="top" secondItem="wCM-5Y-W3l" secondAttribute="top" constant="100" id="7dT-EE-J4x"/>
                             <constraint firstItem="wCM-5Y-W3l" firstAttribute="trailing" secondItem="pw7-10-MKG" secondAttribute="trailing" id="BN0-Mg-MG5"/>
+                            <constraint firstItem="pw7-10-MKG" firstAttribute="leading" secondItem="wCM-5Y-W3l" secondAttribute="leading" id="E6N-p5-jDE"/>
+                            <constraint firstItem="bSO-H0-HHi" firstAttribute="leading" secondItem="wCM-5Y-W3l" secondAttribute="leading" constant="75" id="bRU-8y-9ak"/>
                             <constraint firstItem="pw7-10-MKG" firstAttribute="leading" secondItem="wCM-5Y-W3l" secondAttribute="leading" id="ccT-bk-Ulw"/>
                             <constraint firstItem="4r7-II-cxS" firstAttribute="top" secondItem="wCM-5Y-W3l" secondAttribute="top" constant="45" id="iRR-0P-6vX"/>
+                            <constraint firstItem="bSO-H0-HHi" firstAttribute="top" secondItem="4r7-II-cxS" secondAttribute="bottom" constant="8" id="izZ-mT-imP"/>
+                            <constraint firstItem="pw7-10-MKG" firstAttribute="trailing" secondItem="wCM-5Y-W3l" secondAttribute="trailing" id="jDU-qV-h8r"/>
+                            <constraint firstItem="pw7-10-MKG" firstAttribute="top" secondItem="bSO-H0-HHi" secondAttribute="bottom" constant="36" id="s4A-co-NWY"/>
                             <constraint firstItem="4r7-II-cxS" firstAttribute="leading" secondItem="wCM-5Y-W3l" secondAttribute="leading" constant="75" id="vO7-91-vID"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wCM-5Y-W3l"/>
