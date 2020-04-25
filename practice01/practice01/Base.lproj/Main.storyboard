@@ -51,13 +51,16 @@
         <!--Item3-->
         <scene sceneID="kpy-rf-kkg">
             <objects>
-                <viewController id="AOu-OL-6rF" sceneMemberID="viewController">
+                <viewController id="AOu-OL-6rF" customClass="ThirdViewController" customModule="practice01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="80y-J1-2kv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="sDg-MC-21M">
                                 <rect key="frame" x="0.0" y="71" width="375" height="216"/>
+                                <connections>
+                                    <action selector="changeDatePicker:" destination="AOu-OL-6rF" eventType="valueChanged" id="0LR-T9-G9a"/>
+                                </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="current time : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xt-Xa-2F9">
                                 <rect key="frame" x="16" y="309" width="107" height="21"/>
@@ -79,6 +82,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="start"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="cur time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34E-7a-dTS">
+                                <rect key="frame" x="131" y="309" width="201" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pick time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99H-Qj-Oqs">
+                                <rect key="frame" x="131" y="338" width="201" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -89,10 +106,14 @@
                         <viewLayoutGuide key="safeArea" id="8P1-M1-xu3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item3" id="UiV-PI-o2N"/>
+                    <connections>
+                        <outlet property="lblCurTime" destination="34E-7a-dTS" id="eAl-hZ-u0G"/>
+                        <outlet property="lblPickTime" destination="99H-Qj-Oqs" id="uFC-9L-o2j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5K5-Rt-yIa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-850" y="267"/>
+            <point key="canvasLocation" x="-850.39999999999998" y="266.71664167916043"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="QZb-R2-N36">
