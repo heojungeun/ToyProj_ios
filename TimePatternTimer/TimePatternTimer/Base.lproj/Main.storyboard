@@ -71,12 +71,6 @@
                                     <action selector="startTimer:" destination="xN0-34-yqZ" eventType="touchUpInside" id="sOH-ZR-bC5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="lblpickertime" text="선택 시간 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4r7-II-cxS">
-                                <rect key="frame" x="75" y="45" width="237" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="restTimelbl" text="남은 시간 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSO-H0-HHi">
                                 <rect key="frame" x="75" y="74" width="77" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -98,17 +92,14 @@
                             <constraint firstItem="pw7-10-MKG" firstAttribute="leading" secondItem="wCM-5Y-W3l" secondAttribute="leading" id="E6N-p5-jDE"/>
                             <constraint firstItem="bSO-H0-HHi" firstAttribute="leading" secondItem="wCM-5Y-W3l" secondAttribute="leading" constant="75" id="bRU-8y-9ak"/>
                             <constraint firstItem="pw7-10-MKG" firstAttribute="leading" secondItem="wCM-5Y-W3l" secondAttribute="leading" id="ccT-bk-Ulw"/>
-                            <constraint firstItem="4r7-II-cxS" firstAttribute="top" secondItem="wCM-5Y-W3l" secondAttribute="top" constant="45" id="iRR-0P-6vX"/>
-                            <constraint firstItem="bSO-H0-HHi" firstAttribute="top" secondItem="4r7-II-cxS" secondAttribute="bottom" constant="8" id="izZ-mT-imP"/>
                             <constraint firstItem="pw7-10-MKG" firstAttribute="trailing" secondItem="wCM-5Y-W3l" secondAttribute="trailing" id="jDU-qV-h8r"/>
                             <constraint firstItem="pw7-10-MKG" firstAttribute="top" secondItem="bSO-H0-HHi" secondAttribute="bottom" constant="36" id="s4A-co-NWY"/>
-                            <constraint firstItem="4r7-II-cxS" firstAttribute="leading" secondItem="wCM-5Y-W3l" secondAttribute="leading" constant="75" id="vO7-91-vID"/>
+                            <constraint firstItem="bSO-H0-HHi" firstAttribute="top" secondItem="wCM-5Y-W3l" secondAttribute="top" constant="74" id="xyq-Ca-UUK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wCM-5Y-W3l"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="R9a-sG-3ov"/>
                     <connections>
-                        <outlet property="IblPickerTime" destination="4r7-II-cxS" id="NcY-Gb-oL3"/>
                         <outlet property="IblRestTime" destination="bSO-H0-HHi" id="U0e-Gp-14O"/>
                     </connections>
                 </viewController>

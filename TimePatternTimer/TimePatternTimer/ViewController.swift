@@ -14,11 +14,11 @@ class ViewController: UIViewController {
     let interval = 1.0
     var alarmTime: Date?
     var currentTime: Date?
+    var prevpickTime: Date?
     
     //timer
     var mTimer : Timer?
-    
-    @IBOutlet var IblPickerTime: UILabel!
+
     @IBOutlet var IblRestTime: UILabel!
     
     override func viewDidLoad() {
@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "hh:mm:ss"
         alarmTime = formatter.date(from: "00:01:00")
+        prevpickTime = formatter.date(from: "00:01:00")
         
     }
 
@@ -34,15 +35,13 @@ class ViewController: UIViewController {
         
         let datePickerView = sender // 전달 인수 저장
         
-        let formatter = DateFormatter()
-        formatter.dateFormat = "hh:mm:ss"
-        IblPickerTime.text = "선택시간 : " + formatter.string(from: datePickerView.date)
         alarmTime = datePickerView.date
+        prevpickTime = datePickerView.date
     }
 
     @IBAction func startTimer(_ sender: Any) {
         // start 버튼 눌렀을 때 시간 적용해서 타이머 시작하기
-        Timer.scheduledTimer(timeInterval: interval, target: self, selector: timeSelector, userInfo: nil, repeats: true)
+        mTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: timeSelector, userInfo: nil, repeats: true)
     }
     
     @IBAction func cancelTimer(_ sender: Any) {
@@ -53,8 +52,10 @@ class ViewController: UIViewController {
             }
         }
         
-        IblPickerTime.text = "선택 시간 : "
         IblRestTime.text = "남은 시간 : "
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm:ss"
+        alarmTime = prevpickTime
     }
     
     @objc
