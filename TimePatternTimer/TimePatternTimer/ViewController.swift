@@ -35,6 +35,11 @@ class ViewController: UIViewController {
         
         let datePickerView = sender // 전달 인수 저장
         
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm:ss"
+        var subtime = formatter.date(from: "00:00:00")
+        
+        
         alarmTime = datePickerView.date
         prevpickTime = datePickerView.date
     }
