@@ -10,26 +10,17 @@
         <!--Item 2-->
         <scene sceneID="UZM-gg-BXo">
             <objects>
-                <viewController id="8VQ-8S-C2G" sceneMemberID="viewController">
+                <viewController id="8VQ-8S-C2G" customClass="secondViewController" customModule="TimePatternTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8U2-sU-2er">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="gvG-tk-bP4">
-                                <rect key="frame" x="94" y="515" width="186" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="stopbtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w77-Fh-SYs">
-                                        <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
-                                        <state key="normal" title="STOP"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="startbtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaB-Rp-vTi">
-                                        <rect key="frame" x="139" y="0.0" width="47" height="30"/>
-                                        <state key="normal" title="START"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gxY-0l-wMe">
-                                <rect key="frame" x="103" y="198" width="168.5" height="36"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27M-UK-qjS" customClass="ProgressBar" customModule="TimePatternTimer">
+                                <rect key="frame" x="47" y="114" width="281" height="281"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="counterView" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="gxY-0l-wMe">
+                                <rect key="frame" x="95.5" y="236" width="184.5" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="hour" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUH-gg-u76">
                                         <rect key="frame" x="0.0" y="0.0" width="37.5" height="36"/>
@@ -38,40 +29,80 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqG-mt-GQc">
-                                        <rect key="frame" x="47.5" y="0.0" width="8" height="36"/>
+                                        <rect key="frame" x="51.5" y="0.0" width="8" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="min" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHG-Ki-KtO">
-                                        <rect key="frame" x="65.5" y="0.0" width="37.5" height="36"/>
+                                        <rect key="frame" x="73.5" y="0.0" width="37.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEP-Iz-DEn">
-                                        <rect key="frame" x="113" y="0.0" width="8" height="36"/>
+                                        <rect key="frame" x="125" y="0.0" width="8" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="sec" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khu-hp-Iva">
-                                        <rect key="frame" x="131" y="0.0" width="37.5" height="36"/>
+                                        <rect key="frame" x="147" y="0.0" width="37.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="gvG-tk-bP4">
+                                <rect key="frame" x="94.5" y="515" width="186" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="stopbtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w77-Fh-SYs">
+                                        <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
+                                        <state key="normal" title="STOP"/>
+                                        <connections>
+                                            <action selector="stopTimer:" destination="8VQ-8S-C2G" eventType="touchUpInside" id="o28-Zi-C6M"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="startbtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaB-Rp-vTi">
+                                        <rect key="frame" x="139" y="0.0" width="47" height="30"/>
+                                        <state key="normal" title="START"/>
+                                        <connections>
+                                            <action selector="startTimer:" destination="8VQ-8S-C2G" eventType="touchUpInside" id="QjJ-f6-98l"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lSb-8D-Dz8" firstAttribute="bottom" secondItem="gxY-0l-wMe" secondAttribute="bottom" constant="346" id="AT3-EI-0lR"/>
+                            <constraint firstItem="gvG-tk-bP4" firstAttribute="top" secondItem="27M-UK-qjS" secondAttribute="bottom" constant="120" id="DdV-jg-3dW"/>
+                            <constraint firstItem="gvG-tk-bP4" firstAttribute="centerX" secondItem="8U2-sU-2er" secondAttribute="centerX" id="Hwo-Mw-y0F"/>
+                            <constraint firstItem="gxY-0l-wMe" firstAttribute="centerX" secondItem="8U2-sU-2er" secondAttribute="centerX" id="Ipw-f6-od4"/>
+                            <constraint firstItem="27M-UK-qjS" firstAttribute="top" secondItem="lSb-8D-Dz8" secondAttribute="top" constant="114" id="R2K-oz-G2t"/>
+                            <constraint firstItem="gxY-0l-wMe" firstAttribute="top" secondItem="lSb-8D-Dz8" secondAttribute="top" constant="236" id="Wqy-BH-ueS"/>
+                            <constraint firstItem="lSb-8D-Dz8" firstAttribute="trailing" secondItem="27M-UK-qjS" secondAttribute="trailing" constant="47" id="Xne-iS-gG2"/>
+                            <constraint firstItem="27M-UK-qjS" firstAttribute="leading" secondItem="lSb-8D-Dz8" secondAttribute="leading" constant="47" id="lAE-Eh-UkO"/>
+                            <constraint firstItem="lSb-8D-Dz8" firstAttribute="bottom" secondItem="27M-UK-qjS" secondAttribute="bottom" constant="223" id="mvb-7i-p2T"/>
+                            <constraint firstItem="lSb-8D-Dz8" firstAttribute="bottom" secondItem="gvG-tk-bP4" secondAttribute="bottom" constant="73" id="nab-KD-t6c"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lSb-8D-Dz8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="J8Y-dW-kea"/>
+                    <connections>
+                        <outlet property="counterView" destination="gxY-0l-wMe" id="4jB-xD-yBt"/>
+                        <outlet property="hours" destination="cUH-gg-u76" id="iFh-do-iSU"/>
+                        <outlet property="minutes" destination="yHG-Ki-KtO" id="r8d-fZ-eFp"/>
+                        <outlet property="progressBar" destination="27M-UK-qjS" id="DH8-IK-eAy"/>
+                        <outlet property="seconds" destination="Khu-hp-Iva" id="SWr-Xo-l2c"/>
+                        <outlet property="startBtn" destination="qaB-Rp-vTi" id="j4g-o4-D7n"/>
+                        <outlet property="stopBtn" destination="w77-Fh-SYs" id="8ye-Dv-QPe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wiV-yW-LuE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="957" y="101"/>
+            <point key="canvasLocation" x="956" y="100.29985007496252"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="N6y-Nr-0X4">

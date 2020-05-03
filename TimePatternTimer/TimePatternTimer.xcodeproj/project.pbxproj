@@ -14,6 +14,7 @@
 		BC3C474824498C0E0006B130 /* TimePatternTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC3C474624498C0E0006B130 /* TimePatternTimer.xcdatamodeld */; };
 		BC3C474A24498C0F0006B130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3C474924498C0F0006B130 /* Assets.xcassets */; };
 		BC3C474D24498C0F0006B130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3C474B24498C0F0006B130 /* LaunchScreen.storyboard */; };
+		BC970FBC245EB71900D75C53 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC970FBB245EB71900D75C53 /* secondViewController.swift */; };
 		BC9A41E8244B16CF007AF8BE /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A41E7244B16CF007AF8BE /* Stopwatch.swift */; };
 		BCE539EA245D73D3000D1F71 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE539E9245D73D3000D1F71 /* CountdownTimer.swift */; };
 		BCE539EC245D7A1C000D1F71 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE539EB245D7A1C000D1F71 /* CustomColors.swift */; };
@@ -30,6 +31,7 @@
 		BC3C474924498C0F0006B130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC3C474C24498C0F0006B130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC3C474E24498C0F0006B130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC970FBB245EB71900D75C53 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		BC9A41E7244B16CF007AF8BE /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		BCE539E9245D73D3000D1F71 /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 		BCE539EB245D7A1C000D1F71 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				BCE539E9245D73D3000D1F71 /* CountdownTimer.swift */,
 				BCE539EB245D7A1C000D1F71 /* CustomColors.swift */,
 				BCE539ED245D7A99000D1F71 /* ProgressBar.swift */,
+				BC970FBB245EB71900D75C53 /* secondViewController.swift */,
 			);
 			path = TimePatternTimer;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				BC9A41E8244B16CF007AF8BE /* Stopwatch.swift in Sources */,
 				BC3C474024498C0D0006B130 /* SceneDelegate.swift in Sources */,
 				BCE539EE245D7A99000D1F71 /* ProgressBar.swift in Sources */,
+				BC970FBC245EB71900D75C53 /* secondViewController.swift in Sources */,
 				BC3C474824498C0E0006B130 /* TimePatternTimer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
