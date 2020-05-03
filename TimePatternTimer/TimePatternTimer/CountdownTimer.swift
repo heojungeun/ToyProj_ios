@@ -70,7 +70,7 @@ class CountdownTimer {
         let minutes = Int(time) / 60 % 60
         let seconds = Int(time) % 60
         
-        return (hours: String(format: "%02i", hours), minutes: String(format:"%02i",minutes), seconds: String(format:"02i", seconds))
+        return (hours: String(format: "%02i", hours), minutes: String(format:"%02i",minutes), seconds: String(format:"%02i", seconds))
     }
     
     fileprivate func timerDone(){
