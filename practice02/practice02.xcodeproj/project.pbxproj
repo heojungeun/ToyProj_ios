@@ -14,6 +14,12 @@
 		BC4743D724681FB3002FD248 /* practice02.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC4743D524681FB3002FD248 /* practice02.xcdatamodeld */; };
 		BC4743D924681FB4002FD248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4743D824681FB4002FD248 /* Assets.xcassets */; };
 		BC4743DC24681FB4002FD248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4743DA24681FB4002FD248 /* LaunchScreen.storyboard */; };
+		BC4743EA246820E7002FD248 /* m2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4743E4246820E7002FD248 /* m2.png */; };
+		BC4743EB246820E7002FD248 /* m3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4743E5246820E7002FD248 /* m3.png */; };
+		BC4743EC246820E7002FD248 /* m1.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4743E6246820E7002FD248 /* m1.png */; };
+		BC4743ED246820E7002FD248 /* m5.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4743E7246820E7002FD248 /* m5.png */; };
+		BC4743EE246820E7002FD248 /* m6.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4743E8246820E7002FD248 /* m6.png */; };
+		BC4743EF246820E7002FD248 /* m4.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4743E9246820E7002FD248 /* m4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		BC4743D824681FB4002FD248 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC4743DB24681FB4002FD248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC4743DD24681FB4002FD248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC4743E4246820E7002FD248 /* m2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m2.png; sourceTree = "<group>"; };
+		BC4743E5246820E7002FD248 /* m3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m3.png; sourceTree = "<group>"; };
+		BC4743E6246820E7002FD248 /* m1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m1.png; sourceTree = "<group>"; };
+		BC4743E7246820E7002FD248 /* m5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m5.png; sourceTree = "<group>"; };
+		BC4743E8246820E7002FD248 /* m6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m6.png; sourceTree = "<group>"; };
+		BC4743E9246820E7002FD248 /* m4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 		BC4743CB24681FB3002FD248 /* practice02 */ = {
 			isa = PBXGroup;
 			children = (
+				BC4743E32468208D002FD248 /* images */,
 				BC4743CC24681FB3002FD248 /* AppDelegate.swift */,
 				BC4743CE24681FB3002FD248 /* SceneDelegate.swift */,
 				BC4743D024681FB3002FD248 /* ViewController.swift */,
@@ -68,6 +81,19 @@
 				BC4743D524681FB3002FD248 /* practice02.xcdatamodeld */,
 			);
 			path = practice02;
+			sourceTree = "<group>";
+		};
+		BC4743E32468208D002FD248 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BC4743E6246820E7002FD248 /* m1.png */,
+				BC4743E4246820E7002FD248 /* m2.png */,
+				BC4743E5246820E7002FD248 /* m3.png */,
+				BC4743E9246820E7002FD248 /* m4.png */,
+				BC4743E7246820E7002FD248 /* m5.png */,
+				BC4743E8246820E7002FD248 /* m6.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +154,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC4743EB246820E7002FD248 /* m3.png in Resources */,
+				BC4743EC246820E7002FD248 /* m1.png in Resources */,
+				BC4743EA246820E7002FD248 /* m2.png in Resources */,
+				BC4743ED246820E7002FD248 /* m5.png in Resources */,
+				BC4743EE246820E7002FD248 /* m6.png in Resources */,
 				BC4743DC24681FB4002FD248 /* LaunchScreen.storyboard in Resources */,
 				BC4743D924681FB4002FD248 /* Assets.xcassets in Resources */,
+				BC4743EF246820E7002FD248 /* m4.png in Resources */,
 				BC4743D424681FB3002FD248 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
