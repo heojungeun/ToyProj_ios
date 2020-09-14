@@ -10,3 +10,7 @@ Project 01 - [BookMemo](https://github.com/heojungeun/ToyProj_ios/tree/master/Bo
 Project 02 - [Stopwatch](https://github.com/heojungeun/ToyProj_ios/tree/master/firebasePush)
 
 <img src="https://github.com/heojungeun/ToyProj_ios/blob/master/firebasePush/stopwatch.gif" width="250">
+
+Project 03 - [CustomFont](https://github.com/heojungeun/ToyProj_ios/tree/master/CustomFont)
+
+<img src="https://github.com/heojungeun/ToyProj_ios/blob/master/CustomFont/capture.gif" width="250">
