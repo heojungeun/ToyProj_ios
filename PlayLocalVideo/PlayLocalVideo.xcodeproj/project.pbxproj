@@ -14,6 +14,8 @@
 		BCEE85852510F8C500E3275B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEE85842510F8C500E3275B /* Assets.xcassets */; };
 		BCEE85882510F8C500E3275B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEE85862510F8C500E3275B /* LaunchScreen.storyboard */; };
 		BCFDFAA32512467900C8BEF2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDFAA22512467900C8BEF2 /* SecondViewController.swift */; };
+		BCFDFAA525124C1A00C8BEF2 /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDFAA425124C1A00C8BEF2 /* VideoTableViewController.swift */; };
+		BCFDFAA725124C2C00C8BEF2 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDFAA625124C2C00C8BEF2 /* VideoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		BCEE85872510F8C500E3275B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCEE85892510F8C500E3275B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCFDFAA22512467900C8BEF2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BCFDFAA425124C1A00C8BEF2 /* VideoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
+		BCFDFAA625124C2C00C8BEF2 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				BCEE85862510F8C500E3275B /* LaunchScreen.storyboard */,
 				BCEE85892510F8C500E3275B /* Info.plist */,
 				BCFDFAA22512467900C8BEF2 /* SecondViewController.swift */,
+				BCFDFAA425124C1A00C8BEF2 /* VideoTableViewController.swift */,
+				BCFDFAA625124C2C00C8BEF2 /* VideoTableViewCell.swift */,
 			);
 			path = PlayLocalVideo;
 			sourceTree = "<group>";
@@ -143,8 +149,10 @@
 			files = (
 				BCFDFAA32512467900C8BEF2 /* SecondViewController.swift in Sources */,
 				BCEE85802510F8C400E3275B /* ViewController.swift in Sources */,
+				BCFDFAA525124C1A00C8BEF2 /* VideoTableViewController.swift in Sources */,
 				BCEE857C2510F8C400E3275B /* AppDelegate.swift in Sources */,
 				BCEE857E2510F8C400E3275B /* SceneDelegate.swift in Sources */,
+				BCFDFAA725124C2C00C8BEF2 /* VideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
