@@ -8,9 +8,13 @@
 
 import UIKit
 
-class VideoTableViewCell: UITableViewCell {
+struct Video {
+    let image: String
+    let title: String
+    let source: String
+}
 
-    @IBOutlet weak var name: UILabel!
+class VideoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()

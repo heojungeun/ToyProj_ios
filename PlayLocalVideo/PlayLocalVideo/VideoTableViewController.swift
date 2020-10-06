@@ -7,19 +7,31 @@
 //
 
 import UIKit
+import AVKit
 
 class VideoTableViewController: UITableViewController {
 
-    let nameArr = ["son","kim","park","hong"]
+    var nameArr: [Video] = []
+    
+    func setupTestData(){
+        nameArr = [
+            Video(image: "img1.jpeg", title: "The Book", source: "Youtube"),
+            Video(image: "img2.jpeg", title: "miumiu", source: "Cafe"),
+            Video(image: "img3.jpeg", title: "Flower tree", source: "Youtube"),
+            Video(image: "img4.jpeg", title: "Twilight", source: "Vimeo")
+        ]
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupTestData()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
     // MARK: - Table view data source
@@ -37,9 +49,11 @@ class VideoTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell_test", for: indexPath) as! VideoTableViewCell
-        cell.name.text = nameArr[indexPath.row]
+        
         // Configure the cell...
-
+        cell.textLabel?.text = nameArr[indexPath.row].title
+        cell.imageView?.image = UIImage(named: nameArr[indexPath.row].image)
+        
         return cell
     }
 

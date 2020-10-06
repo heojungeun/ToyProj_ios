@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         name.text = rItem
     }
     
-    func receiveItem(_ item: String){
-        rItem = item
+    func receiveItem(_ item: Video){
+        let imgSrc = item.image
     }
     
     // 화면 전환 방법: https://medium.com/@twih1203/swift-ios-%ED%99%94%EB%A9%B4%EC%A0%84%ED%99%98%ED%95%98%EA%B8%B0-5e5998679d3a
