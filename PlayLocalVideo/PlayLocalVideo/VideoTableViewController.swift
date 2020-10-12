@@ -15,10 +15,10 @@ class VideoTableViewController: UITableViewController {
     
     func setupTestData(){
         nameArr = [
-            Video(image: "img1.jpeg", title: "The Book", source: "Youtube"),
-            Video(image: "img2.jpeg", title: "miumiu", source: "Cafe"),
-            Video(image: "img3.jpeg", title: "Flower tree", source: "Youtube"),
-            Video(image: "img4.jpeg", title: "Twilight", source: "Vimeo")
+            Video(image: #imageLiteral(resourceName: "img3"), title: "The Book", source: "Youtube"),
+            Video(image: #imageLiteral(resourceName: "img1"), title: "miumiu", source: "Cafe"),
+            Video(image: #imageLiteral(resourceName: "img2"), title: "Flower tree", source: "Youtube"),
+            Video(image: #imageLiteral(resourceName: "img4"), title: "Twilight", source: "Vimeo")
         ]
     }
     
@@ -26,6 +26,7 @@ class VideoTableViewController: UITableViewController {
         super.viewDidLoad()
 
         setupTestData()
+        self.tableView.register(VideoTableViewCell.self, forCellReuseIdentifier: "cell_test")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -52,7 +53,7 @@ class VideoTableViewController: UITableViewController {
         
         // Configure the cell...
         cell.textLabel?.text = nameArr[indexPath.row].title
-        cell.imageView?.image = UIImage(named: nameArr[indexPath.row].image)
+        cell.mainImageView.image = nameArr[indexPath.row].image
         
         return cell
     }
@@ -63,5 +64,18 @@ class VideoTableViewController: UITableViewController {
         self.navigationController?.pushViewController(goView, animated: true)
         goView.receiveItem(nameArr[indexPath.row])
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let currentImage = nameArr[indexPath.row].image
+        let imageRatio = currentImage.getImageRatio()
+        return tableView.frame.width / imageRatio
+    }
 
+}
+
+extension UIImage {
+    func getImageRatio() -> CGFloat {
+        let imageRatio = CGFloat(self.size.width / self.size.height)
+        return imageRatio
+    }
 }

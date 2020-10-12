@@ -64,26 +64,30 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrX-OO-76M">
-                                            <rect key="frame" x="38" y="189" width="0.0" height="0.0"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="bgImage" translatesAutoresizingMaskIntoConstraints="NO" id="b0V-zm-9oA">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                            </accessibility>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="200" id="C70-Yd-pWX"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrX-OO-76M">
+                                            <rect key="frame" x="207" y="170" width="0.0" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="bgImage" translatesAutoresizingMaskIntoConstraints="NO" id="b0V-zm-9oA">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="200" id="C70-Yd-pWX"/>
-                                                <constraint firstAttribute="width" constant="414" id="VVb-UZ-gau"/>
-                                            </constraints>
-                                        </imageView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="b0V-zm-9oA" firstAttribute="centerX" secondItem="FVz-4r-ect" secondAttribute="centerX" id="9ri-k4-vcD"/>
+                                        <constraint firstItem="b0V-zm-9oA" firstAttribute="height" secondItem="FVz-4r-ect" secondAttribute="height" id="An6-iu-y4V"/>
                                         <constraint firstAttribute="bottom" secondItem="b0V-zm-9oA" secondAttribute="bottom" id="CHz-0X-AFr"/>
                                         <constraint firstItem="b0V-zm-9oA" firstAttribute="top" secondItem="FVz-4r-ect" secondAttribute="top" id="Djg-Mm-oFX"/>
-                                        <constraint firstItem="IrX-OO-76M" firstAttribute="leading" secondItem="FVz-4r-ect" secondAttribute="leading" constant="38" id="kCu-wu-emd"/>
+                                        <constraint firstItem="IrX-OO-76M" firstAttribute="centerX" secondItem="FVz-4r-ect" secondAttribute="centerX" id="Fzf-qX-vzc"/>
+                                        <constraint firstItem="IrX-OO-76M" firstAttribute="bottom" secondItem="b0V-zm-9oA" secondAttribute="bottom" constant="-30" id="ZFj-7n-Ubn"/>
                                         <constraint firstAttribute="trailing" secondItem="b0V-zm-9oA" secondAttribute="trailing" id="mtB-aS-Ddq"/>
-                                        <constraint firstAttribute="bottom" secondItem="IrX-OO-76M" secondAttribute="bottom" constant="11" id="nnm-Hn-FiI"/>
                                         <constraint firstItem="b0V-zm-9oA" firstAttribute="leading" secondItem="FVz-4r-ect" secondAttribute="leading" id="qbU-4q-NTN"/>
                                     </constraints>
                                 </tableViewCellContentView>
