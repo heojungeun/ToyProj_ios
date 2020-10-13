@@ -36,7 +36,7 @@ class VideoTableViewCell: UITableViewCell {
         
         mainImageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         mainImageView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        
+        mainImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         mainImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
     }
     

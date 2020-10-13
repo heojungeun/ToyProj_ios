@@ -15,9 +15,9 @@ class VideoTableViewController: UITableViewController {
     
     func setupTestData(){
         nameArr = [
-            Video(image: #imageLiteral(resourceName: "img3"), title: "The Book", source: "Youtube"),
-            Video(image: #imageLiteral(resourceName: "img1"), title: "miumiu", source: "Cafe"),
-            Video(image: #imageLiteral(resourceName: "img2"), title: "Flower tree", source: "Youtube"),
+            Video(image: #imageLiteral(resourceName: "img3"), title: "Flower tree", source: "Youtube"),
+            Video(image: #imageLiteral(resourceName: "img1"), title: "The Book", source: "Cafe"),
+            Video(image: #imageLiteral(resourceName: "img2"), title: "miumiu", source: "Youtube"),
             Video(image: #imageLiteral(resourceName: "img4"), title: "Twilight", source: "Vimeo")
         ]
     }
@@ -49,7 +49,7 @@ class VideoTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell_test", for: indexPath) as! VideoTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell_test") as! VideoTableViewCell
         
         // Configure the cell...
         cell.textLabel?.text = nameArr[indexPath.row].title
@@ -73,6 +73,7 @@ class VideoTableViewController: UITableViewController {
 
 }
 
+// ref: https://medium.com/@Archetapp/sizing-uitableview-cells-to-fit-images-swift-in-xcode-13228d139c1a
 extension UIImage {
     func getImageRatio() -> CGFloat {
         let imageRatio = CGFloat(self.size.width / self.size.height)
