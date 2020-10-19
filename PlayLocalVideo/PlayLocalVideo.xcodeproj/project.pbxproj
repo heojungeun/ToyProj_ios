@@ -14,6 +14,7 @@
 		BCEE85832510F8C400E3275B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEE85812510F8C400E3275B /* Main.storyboard */; };
 		BCEE85852510F8C500E3275B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEE85842510F8C500E3275B /* Assets.xcassets */; };
 		BCEE85882510F8C500E3275B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEE85862510F8C500E3275B /* LaunchScreen.storyboard */; };
+		BCF7EF80253DD60C00A7D77C /* IMG_1386.mov in Resources */ = {isa = PBXBuildFile; fileRef = BCF7EF7F253DD60C00A7D77C /* IMG_1386.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BCEE85842510F8C500E3275B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCEE85872510F8C500E3275B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCEE85892510F8C500E3275B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF7EF7F253DD60C00A7D77C /* IMG_1386.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_1386.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				BCEE857F2510F8C400E3275B /* ViewController.swift */,
 				BCEE85812510F8C400E3275B /* Main.storyboard */,
 				BCEE85842510F8C500E3275B /* Assets.xcassets */,
+				BCF7EF7F253DD60C00A7D77C /* IMG_1386.mov */,
 				BCEE85862510F8C500E3275B /* LaunchScreen.storyboard */,
 				BCEE85892510F8C500E3275B /* Info.plist */,
 				BC38AD79253C6B7900205471 /* ImgTableViewCell.swift */,
@@ -130,6 +133,7 @@
 			files = (
 				BCEE85882510F8C500E3275B /* LaunchScreen.storyboard in Resources */,
 				BCEE85852510F8C500E3275B /* Assets.xcassets in Resources */,
+				BCF7EF80253DD60C00A7D77C /* IMG_1386.mov in Resources */,
 				BCEE85832510F8C400E3275B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

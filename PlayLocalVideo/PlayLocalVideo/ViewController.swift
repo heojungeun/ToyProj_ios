@@ -53,6 +53,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedVideoView = SrcArr[indexPath.row]
+        
+        let filePath: String? = Bundle.main.path(forResource: "IMG_1386", ofType: "mov")
+        let url = NSURL(fileURLWithPath: filePath!)
+        
+        playVideo(url: URL)
+    }
+    
+    private func playVideo(url: NSURL){
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
