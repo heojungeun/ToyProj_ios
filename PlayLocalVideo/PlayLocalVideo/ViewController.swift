@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 struct VideoView {
     let image: UIImage
@@ -21,10 +22,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // assets폴더 내 image를 불러오고 싶으면 image literal 선택
     let SrcArr: [VideoView] = [
-        VideoView(image: #imageLiteral(resourceName: "img3"), title: "flower", src: "Youtube"),
-        VideoView(image: #imageLiteral(resourceName: "img1"), title: "book", src: "Vimeo"),
-        VideoView(image: #imageLiteral(resourceName: "img4"), title: "twilight", src: "Youtube"),
-        VideoView(image: #imageLiteral(resourceName: "img2"), title: "cat", src: "Youtube")
+        VideoView(image: #imageLiteral(resourceName: "img3"), title: "sky", src: "IMG_6961"),
+        VideoView(image: #imageLiteral(resourceName: "img1"), title: "book, and travel", src: "IMG_1326"),
+        VideoView(image: #imageLiteral(resourceName: "img4"), title: "twilight", src: "IMG_1386"),
+        VideoView(image: #imageLiteral(resourceName: "img2"), title: "cafe", src: "IMG_6381"),
+        VideoView(image: #imageLiteral(resourceName: "img5"), title: "sun catcher", src: "IMG_7038")
     ]
     
     let timeFormatter: DateFormatter = {
@@ -57,14 +59,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedVideoView = SrcArr[indexPath.row]
         
-        let filePath: String? = Bundle.main.path(forResource: "IMG_1386", ofType: "mov")
+        let filePath: String? = Bundle.main.path(forResource: selectedVideoView.src, ofType: "mov")
         let url = NSURL(fileURLWithPath: filePath!)
         
-        playVideo(url: URL)
+        playVideo(url: url)
     }
     
+    // ref https://moonibot.tistory.com/43
     private func playVideo(url: NSURL){
+        // AVPlayerController instance
+        let playerController = AVPlayerViewController()
+        let player = AVPlayer(url: url as URL)
+        playerController.player = player
         
+        self.present(playerController,animated: true){
+            player.play()
+        }
     }
 
     override func viewDidLoad() {
