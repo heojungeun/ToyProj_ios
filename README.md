@@ -21,3 +21,7 @@ Project 02 - [Stopwatch](https://github.com/heojungeun/ToyProj_ios/tree/master/f
 Project 03 - [CustomFont](https://github.com/heojungeun/ToyProj_ios/tree/master/CustomFont)
 
 <img src="https://github.com/heojungeun/ToyProj_ios/blob/master/CustomFont/capture.gif" width="250">
+
+Project 04 - [PlayLocalVideo](https://github.com/heojungeun/ToyProj_ios/tree/master/PlayLocalVideo)
+
+<img src="https://github.com/heojungeun/ToyProj_ios/blob/master/PlayLocalVideo/capture.gif" width="250">
