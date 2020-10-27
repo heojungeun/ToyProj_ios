@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		BC34847D2541C440004C3319 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34847C2541C440004C3319 /* AppDelegate.swift */; };
 		BC34847F2541C440004C3319 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34847E2541C440004C3319 /* SceneDelegate.swift */; };
-		BC3484812541C440004C3319 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3484802541C440004C3319 /* ViewController.swift */; };
 		BC3484842541C440004C3319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3484822541C440004C3319 /* Main.storyboard */; };
 		BC3484862541C440004C3319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3484852541C440004C3319 /* Assets.xcassets */; };
 		BC3484892541C440004C3319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3484872541C440004C3319 /* LaunchScreen.storyboard */; };
+		BC98758E254865140091DA8E /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98758D254865140091DA8E /* MainPageVC.swift */; };
 		BCDBC13F25459805004F0113 /* billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCDBC13E25459805004F0113 /* billabong.ttf */; };
 		BCDBC1422545B1F4004F0113 /* PaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBC1412545B1F4004F0113 /* PaddedLabel.swift */; };
 /* End PBXBuildFile section */
@@ -21,11 +21,11 @@
 		BC3484792541C43F004C3319 /* InstagramFeedcam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFeedcam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC34847C2541C440004C3319 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC34847E2541C440004C3319 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BC3484802541C440004C3319 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC3484832541C440004C3319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC3484852541C440004C3319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC3484882541C440004C3319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC34848A2541C440004C3319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC98758D254865140091DA8E /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		BCDBC13E25459805004F0113 /* billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = billabong.ttf; sourceTree = "<group>"; };
 		BCDBC1412545B1F4004F0113 /* PaddedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,12 +63,12 @@
 				BCDBC13D2545979E004F0113 /* font */,
 				BC34847C2541C440004C3319 /* AppDelegate.swift */,
 				BC34847E2541C440004C3319 /* SceneDelegate.swift */,
-				BC3484802541C440004C3319 /* ViewController.swift */,
 				BC3484822541C440004C3319 /* Main.storyboard */,
 				BC3484852541C440004C3319 /* Assets.xcassets */,
 				BC3484872541C440004C3319 /* LaunchScreen.storyboard */,
 				BC34848A2541C440004C3319 /* Info.plist */,
 				BCDBC1412545B1F4004F0113 /* PaddedLabel.swift */,
+				BC98758D254865140091DA8E /* MainPageVC.swift */,
 			);
 			path = InstagramFeedcam;
 			sourceTree = "<group>";
@@ -152,9 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC3484812541C440004C3319 /* ViewController.swift in Sources */,
 				BC34847D2541C440004C3319 /* AppDelegate.swift in Sources */,
 				BCDBC1422545B1F4004F0113 /* PaddedLabel.swift in Sources */,
+				BC98758E254865140091DA8E /* MainPageVC.swift in Sources */,
 				BC34847F2541C440004C3319 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
