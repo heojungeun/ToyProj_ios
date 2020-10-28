@@ -152,7 +152,7 @@
         <!--Main PageVC-->
         <scene sceneID="F8W-Sl-gbA">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="hyn-Ok-vLh" customClass="MainPageVC" customModule="InstagramFeedcam" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="hyn-Ok-vLh" customClass="MainPageVC" customModule="InstagramFeedcam" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="pFA-Wi-dPo"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kbf-y9-Kd4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
