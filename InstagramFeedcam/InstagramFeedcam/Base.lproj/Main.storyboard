@@ -19,7 +19,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFd-Vf-C2I">
                                 <rect key="frame" x="0.0" y="44" width="414" height="1222"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aWs-Vo-weM">
+                                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aWs-Vo-weM">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1303.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kIh-73-jRW">
@@ -111,10 +111,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jFd-Vf-C2I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9Og-V9-Yam"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jFd-Vf-C2I" secondAttribute="trailing" id="Bhb-rd-3J4"/>
-                            <constraint firstItem="jFd-Vf-C2I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PI0-sQ-XVm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jFd-Vf-C2I" secondAttribute="bottom" id="ZFv-Ga-YUc"/>
+                            <constraint firstItem="jFd-Vf-C2I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6JF-PV-e2z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jFd-Vf-C2I" secondAttribute="bottom" id="VGu-eg-RJE"/>
+                            <constraint firstItem="jFd-Vf-C2I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fIg-Dw-n6n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jFd-Vf-C2I" secondAttribute="trailing" id="hJM-qL-GyH"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="5cV-gK-ktf"/>
