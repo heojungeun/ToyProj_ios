@@ -125,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="2270" y="-792"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="Nif-PM-smc">
             <objects>
-                <viewController storyboardIdentifier="CameraVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wBv-xC-aAU" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wBv-xC-aAU" customClass="CameraViewController" customModule="InstagramFeedcam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xes-3w-fgz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

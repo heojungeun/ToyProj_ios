@@ -13,6 +13,7 @@
 		BC3484862541C440004C3319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3484852541C440004C3319 /* Assets.xcassets */; };
 		BC3484892541C440004C3319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3484872541C440004C3319 /* LaunchScreen.storyboard */; };
 		BC98758E254865140091DA8E /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98758D254865140091DA8E /* MainPageVC.swift */; };
+		BCD0C4322549B733001875BC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0C4312549B733001875BC /* CameraViewController.swift */; };
 		BCDBC13F25459805004F0113 /* billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCDBC13E25459805004F0113 /* billabong.ttf */; };
 		BCDBC1422545B1F4004F0113 /* PaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBC1412545B1F4004F0113 /* PaddedLabel.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		BC3484882541C440004C3319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC34848A2541C440004C3319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC98758D254865140091DA8E /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
+		BCD0C4312549B733001875BC /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		BCDBC13E25459805004F0113 /* billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = billabong.ttf; sourceTree = "<group>"; };
 		BCDBC1412545B1F4004F0113 /* PaddedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +71,7 @@
 				BC34848A2541C440004C3319 /* Info.plist */,
 				BCDBC1412545B1F4004F0113 /* PaddedLabel.swift */,
 				BC98758D254865140091DA8E /* MainPageVC.swift */,
+				BCD0C4312549B733001875BC /* CameraViewController.swift */,
 			);
 			path = InstagramFeedcam;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC34847D2541C440004C3319 /* AppDelegate.swift in Sources */,
+				BCD0C4322549B733001875BC /* CameraViewController.swift in Sources */,
 				BCDBC1422545B1F4004F0113 /* PaddedLabel.swift in Sources */,
 				BC98758E254865140091DA8E /* MainPageVC.swift in Sources */,
 				BC34847F2541C440004C3319 /* SceneDelegate.swift in Sources */,
