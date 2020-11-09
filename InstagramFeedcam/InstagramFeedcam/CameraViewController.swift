@@ -35,4 +35,9 @@ class CameraViewController: UIViewController {
     private func addPreviewLayer(){
         self.view.layer.addSublayer(self.previewLayer)
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.previewLayer.frame = self.view.bounds
+    }
 }
