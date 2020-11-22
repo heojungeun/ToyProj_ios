@@ -85,9 +85,12 @@ class MainPageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageVi
         self.dataSource = self
         self.delegate = self
         
-        if let firstVC = VCArray.first {
-            setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
-        }
+//        if let firstVC = VCArray.first {
+//            setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
+//        }
+        let midVC = VCArray[1]
+        self.setViewControllers([midVC], direction: .forward, animated: true, completion: nil)
+        
     }
     
     override func didReceiveMemoryWarning() {
