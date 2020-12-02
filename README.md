@@ -25,3 +25,7 @@ Project 03 - [CustomFont](https://github.com/heojungeun/ToyProj_ios/tree/master/
 Project 04 - [PlayLocalVideo](https://github.com/heojungeun/ToyProj_ios/tree/master/PlayLocalVideo)
 
 <img src="https://github.com/heojungeun/ToyProj_ios/blob/master/PlayLocalVideo/capture.gif" width="250">
+
+Project 05 - [InstagramFeedcam](https://github.com/heojungeun/ToyProj_ios/tree/master/InstagramFeedcam)
+
+<img src="https://github.com/heojungeun/ToyProj_ios/blob/master/InstagramFeedcam/capture.gif" width="250">
