@@ -174,20 +174,13 @@
             </objects>
             <point key="canvasLocation" x="1365" y="-1503"/>
         </scene>
-        <!--Title-->
+        <!--Main PageVC-->
         <scene sceneID="F8W-Sl-gbA">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="hyn-Ok-vLh" customClass="MainPageVC" customModule="InstagramFeedcam" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="pFA-Wi-dPo">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" title="Title" id="atZ-o5-jay">
-                        <barButtonItem key="rightBarButtonItem" title="DMbtn" image="paperplane" catalog="system" landscapeImage="paperplane" width="50" id="p8r-ZB-hoC">
-                            <connections>
-                                <segue destination="qO4-sT-Rl6" kind="show" id="Eng-WI-e9M"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kbf-y9-Kd4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -261,7 +254,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Instagram" id="5pW-6M-W44">
                         <barButtonItem key="rightBarButtonItem" title="DMbtn" image="paperplane" catalog="system" landscapeImage="paperplane" width="50" id="WYd-6y-6FR">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gaj-NQ-opX">
@@ -367,7 +360,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pLI-w4-kpw">
-                                <rect key="frame" x="0.0" y="88" width="414" height="1178"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="1222"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jcn-cr-mrG">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
